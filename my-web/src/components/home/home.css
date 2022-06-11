@@ -1,0 +1,103 @@
+header {
+	height: 100vh;
+	padding-top: 7rem;
+	/* overflow: hidden;  */
+	/* object-fit: cover; */
+}
+
+.header__container {
+	text-align: center;
+	height: 100%;
+	position: relative;
+}
+
+.header__container > h1, h5{
+	color:var(--color-primary)
+}
+
+.header__container> h1{
+	font-family: 'Comfortaa', cursive;
+
+}
+.header__container >h3{
+	color: var(--color-primary);
+}
+.span{
+	font-size: 1.2rem;
+	color:var(--color-white);
+	padding-right: 0.3rem;
+	font-family: 'Mali', cursive;
+}
+
+
+/*---- CTA---*/
+
+.cta {
+	margin-top: 2.5rem;
+	display: flex;
+	gap: 1.2rem;
+	justify-content: center;
+}
+
+/*---- Socials---*/
+
+.header__social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	position: absolute;
+	left: 0;
+	bottom: 3rem;
+    
+}
+
+.header__social::after {
+	content: '';
+	width: 1px;
+	height: 2rem;
+	background: var(--color-green-light);
+}
+
+
+
+/*---- scroll me---*/
+.scroll__down{
+    position: absolute;
+    right:-2.3rem;
+    bottom:5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+
+@media screen  and(max-width:1024px) {
+    header {
+        height:68vh;
+    }
+
+
+
+    
+}
+
+@media screen and(max-width:600px) {
+    header {
+        height:100vh;
+    }
+
+    .header__social, .scroll__down{
+        display:none;
+    }
+    
+
+
+    
+}
+
+
+
+
+
+ 

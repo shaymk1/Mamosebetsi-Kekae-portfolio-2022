@@ -1,97 +1,118 @@
-
-
-
 * {
 	margin: 0;
 	padding: 0;
-  outline: 0;
-  list-style: none;
+	outline: 0;
+	list-style: none;
 	text-decoration: none;
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Comfortaa','Patrick Hand','Mali', cursive;
+	font-family: 'Comfortaa', 'Patrick Hand', 'Mali', cursive;
 	font-family: 'Open Sans', sans-serif;
-  font-family: 'New York' ,serif;
-  background: var(--color-bg);
-  color :var(--color-primary-variant);
-
+	font-family: 'New York', serif;
+	background: var(--color-bg);
+	color: var(--color-primary-variant);
 }
 
-
-
-:root
-{
-  --color-bg: #6D3012;
-  --color-primary-variant:#F4BC5D;
-  --yellow: #F5C32C;
+:root {
+	--color-bg: #6d3012;
+	--color-primary-variant: #f4bc5d;
+	--yellow: #f5c32c;
 	--color-light-brown: #993300;
-	--color-maroon:#490206;
-	--color-maroon-dark:#360201;
+	--color-maroon: #490206;
+	--color-maroon-dark: #360201;
 	--color-primary: #e9c46a;
-	--color-dark-orange: #FF6B18;
-	--color-orange-light: #FF8C01;
-	--color-green-light: #00703D;
-	--color-green-dark: #005A31;
+	--color-dark-orange: #ff6b18;
+	--color-orange-light: #ff8c01;
+	--color-green-light: #00703d;
+	--color-green-dark: #005a31;
 	--color-white: #ffff;
-  --color-light-text:#ddd8b3;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    --orange : #FCA61F;
-    --black : #242D49;
-    --gray : #788097;
-    --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
-    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --orangeCard: rgba(252, 166, 31, 0.45);
-    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+	--color-light-text: #ddd8b3;
+}
+/*---general styles---*/
+.container {
+	width: var(--container-width-lg);
+	margin: 0 auto;
 }
 
-.App{
-    padding: 0.5rem 3.5rem;
-    overflow: hidden;
-    color: var(--black);    
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 500;
 }
 
-.button {
-    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
-    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
-    border-radius: 34px;
-    border: none;
-    color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
-  }
-  
-  .button:hover {
-    background: white;
-    cursor: pointer;
-    border: 1px solid var(--orange);
-    color: var(--orange);
-  }
-  @media screen and (max-width: 480px) {
-    .App {
-      padding: 0.5rem 1rem;
+h1 {
+	font-size: 2.5rem;
+}
 
-    }
-  }
+section {
+	margin-top: 8rem;
+	/* height: 100vh; */
+}
 
-  
+section > h2,
+section > h5 {
+	text-align: center;
+	color: var(--color-orange-dark);
+}
 
+section > h2 {
+	color: var(--color-orange-light);
+	margin-bottom: 3rem;
+}
+
+.text-light {
+	color: var(--color-light);
+}
+
+a {
+	color: var(--color-primary);
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--color-white);
+}
+
+
+
+.btn {
+	width: max-content;
+	display: inline-block;
+	color: var(--color-primary);
+	padding: 0.75rem 1.2rem;
+	border-radius: 0.4rem;
+	cursor: pointer;
+	border: 1px solid var(--color-orange-dark);
+	transition: var(--transition);
+}
+
+.btn:hover {
+	background-color: var(--color-white);
+	color: var(--color-bg-variant);
+	border-color: transparent;
+}
+
+.btn-primary {
+	background: var(--color-bg-variant);
+	color: var(--color-primary);
+}
+
+img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+@media screen and (max-width: 480px) {
+	.App {
+		padding: 0.5rem 1rem;
+	}
+}
 
 /* 
 :root {
@@ -106,4 +127,16 @@ body {
 	--color-green-light: #00703D;
 	--color-green-dark: #005A31;
 	--color-white: #ffff;
-  --color-light-text:#ddd8b3; */
+  --color-light-text:#ddd8b3;
+  
+  
+  --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  
+  */

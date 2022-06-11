@@ -22,6 +22,11 @@ const Nav = () => {
 							</Link>
 						</li>
 						<li>
+							<Link to="about" spy={true} smooth={true}>
+								About
+							</Link>
+						</li>
+						<li>
 							<Link to="services" spy={true} smooth={true}>
 								Serivces
 							</Link>
@@ -36,14 +41,10 @@ const Nav = () => {
 								Protfolio
 							</Link>
 						</li>
+
 						<li>
-							<Link to="testimonial" spy={true} smooth={true}>
-								Testimonial
-							</Link>
-						</li>
-						<li>
-							<Link to="testimonial" spy={true} smooth={true}>
-							Contact
+							<Link to="contact" spy={true} smooth={true}>
+								Contact
 							</Link>
 						</li>
 					</ul>
